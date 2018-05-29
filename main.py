@@ -11,13 +11,14 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 
-import algo
-from arguments import get_args
-from envs import make_vec_envs
-from model import Policy
-from storage import RolloutStorage
-from utils import get_vec_normalize
-from visualize import visdom_plot
+from a2c_ppo_acktr import algo
+from a2c_ppo_acktr.arguments import get_args
+from a2c_ppo_acktr.envs import make_vec_envs
+from a2c_ppo_acktr.model import Policy
+from a2c_ppo_acktr.storage import RolloutStorage
+from a2c_ppo_acktr.utils import get_vec_normalize
+from a2c_ppo_acktr.visualize import visdom_plot
+
 
 args = get_args()
 
